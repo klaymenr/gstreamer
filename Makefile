@@ -1,7 +1,7 @@
-all: helloworld
+all: ogg-sample
 
-helloworld: helloworld.c
-	gcc -Wall helloworld.c -o helloworld `pkg-config --cflags --libs gstreamer-1.0`
+ogg-sample: ogg-sample.c
+	gcc -Wall ogg-sample.c -o ogg-sample `pkg-config --cflags --libs gstreamer-1.0`
 
 clean:
-	rm -f helloworld
+	rm -f ogg-sample
